@@ -1,0 +1,6 @@
+.DS_Store
+PROJECT-BRIEF.md
+CLAUDE.md
+__pycache__/
+*.pyc
+logs/
