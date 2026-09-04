@@ -11,18 +11,22 @@ Front door for any agent working in this repo, Claude Code or otherwise.
 | [PROJECT-BRIEF.md](PROJECT-BRIEF.md) | goals, status, work log, constraints |
 | [README.md](README.md) | whatever the repo documents about itself |
 
-## Machine-wide context (same facts for every model)
+## The rules are machine-wide, and they live in one place
 
-| Need | Where |
+Do not reconstruct them from this file. Read the canon:
+
+| File | What it holds |
 |---|---|
-| Every skill and agent available on this Mac, one line each | `~/DEV/shared/CAPABILITY-INDEX.md` |
-| Ask which one fits a task | `python3 ~/.claude/scripts/router/capabilities.py --find "<task>"` |
-| What services/keys/DNS exist and whether they are actually wired | `~/DEV/shared/SYSTEM-INDEX.md` |
-| All projects, with Hebrew/English aliases | `~/.claude/project-registry.json` |
-| Past failures, searchable before debugging | `python3 ~/.claude/scripts/incidents/incident.py search "<symptom>"` |
-| Cross-machine task state (Omac, PC, Ollama) | `python3 ~/.claude/scripts/delegation/status.py` |
+| `~/DEV/shared/HOUSE-RULES.md` | the procedures that bind every model here. **Read first.** |
+| `~/DEV/shared/LAUNCHER.md` | how to find and run anything, one command shape |
+| `~/DEV/shared/MACHINES.md` | the three machines, pools, cost, how to dispatch |
+| `~/DEV/shared/VAULT-GUIDE.md` | the two Obsidian vaults, folder map, note rules |
+| `~/DEV/AGENTS.md` | the root front door, same map, fuller |
 
-## Two rules that hold in every repo here
+```
+~/DEV/shared/bin/run.sh rules                what binds you here
+~/DEV/shared/bin/run.sh context icloud-tagger         goal, status, last 5 actions, open bugs
+~/DEV/shared/bin/run.sh find "<your task>"    which skill or agent already does this
+```
 
-1. **Never put a secret value in a tool argument.** Write it to `~/DEV/_inbox/<project>/`, then `sed` it into place from there. A PreToolUse hook enforces this and will block the call.
-2. **Incoming files go to `~/DEV/_inbox/<project>/`,** never inside the repo. Anything dropped in the repo gets committed and deployed.
+The three that bite hardest if you skip the canon: **never `rm`** (`mv` to `~/.Trash/`), **never put a secret value in a command or an edit** (read it from `~/DEV/_inbox/<project>/` and `sed` it in), and **incoming files go to `~/DEV/_inbox/<project>/`**, never inside the repo, because anything dropped in the repo gets committed and deployed.
