@@ -1,0 +1,2021 @@
+{
+ "_about": "Rules for doc_index.py. Keyword to doc type, category, person, alias yes/no. Patterns are matched on a normalised name (bidi stripped, lowercased, _ - . turned into spaces, quotes unified). A pattern starting with = must match a whole word. No ID or account numbers belong in this file: it is committed to git. A pattern starting with ~ is a whole word that may carry one Hebrew prefix letter (ו ה ב ל מ ש כ).",
+ "version": 4,
+ "icloud_root": "~/Library/Mobile Documents/com~apple~CloudDocs",
+ "central_folder": "07 - אישי/מסמכים חשובים",
+ "roots": [
+  "07 - אישי/סידורים",
+  "07 - אישי/משפחה",
+  "04 - תמונות/אלעד תמונות",
+  "03 - חשבונאות ומסמכים",
+  "02 - צור הדרכות"
+ ],
+ "extensions": [
+  ".pdf",
+  ".jpg",
+  ".jpeg",
+  ".png",
+  ".heic",
+  ".tif",
+  ".tiff",
+  ".doc",
+  ".docx",
+  ".xls",
+  ".xlsx"
+ ],
+ "important_tag": "מסמך חשוב",
+ "categories": {
+  "ids": {
+   "folder": "תעודות זהות ודרכונים",
+   "tag": "מסמך זהות"
+  },
+  "vehicle": {
+   "folder": "רכב",
+   "tag": "רכב"
+  },
+  "company": {
+   "folder": "צור הדרכות בע\"מ",
+   "tag": "צור הדרכות בע\"מ"
+  },
+  "osek": {
+   "folder": "עוסק מורשה",
+   "tag": "עוסק מורשה"
+  },
+  "bank": {
+   "folder": "בנק ואשראי",
+   "tag": "בנק"
+  },
+  "insurance": {
+   "folder": "ביטוח",
+   "tag": "ביטוח"
+  },
+  "pension": {
+   "folder": "פנסיה וחיסכון",
+   "tag": "פנסיה וחיסכון"
+  },
+  "realestate": {
+   "folder": "בית ונדל\"ן",
+   "tag": "נדל\"ן"
+  },
+  "medical": {
+   "folder": "רפואי",
+   "tag": "רפואי"
+  },
+  "army": {
+   "folder": "צבא ומילואים",
+   "tag": "צבא"
+  },
+  "kids": {
+   "folder": "ילדים וחינוך",
+   "tag": "חינוך"
+  },
+  "us": {
+   "folder": "ארה\"ב ומיסים",
+   "tag": "ארה\"ב"
+  },
+  "tax": {
+   "folder": "מס הכנסה ודוחות שנתיים",
+   "tag": "מס"
+  },
+  "contracts": {
+   "folder": "חוזים והסכמים",
+   "tag": "חוזה"
+  },
+  "certs": {
+   "folder": "תעודות והסמכות",
+   "tag": "תעודה"
+  },
+  "misc": {
+   "folder": "שונות",
+   "tag": "מסמך"
+  }
+ },
+ "persons": [
+  {
+   "tag": "אלעד",
+   "any": [
+    "אלעד",
+    "=elad",
+    "elad y",
+    "elad tzur",
+    "צור אלעד"
+   ]
+  },
+  {
+   "tag": "אפרת",
+   "any": [
+    "אפרת",
+    "=efrat",
+    "efrattzur"
+   ]
+  },
+  {
+   "tag": "בינה שמחה",
+   "any": [
+    "=בינה",
+    "=binah",
+    "=bina"
+   ]
+  },
+  {
+   "tag": "בתיה",
+   "any": [
+    "בתיה",
+    "=batia",
+    "=batya"
+   ]
+  },
+  {
+   "tag": "יונה",
+   "any": [
+    "=יונה",
+    "=yona"
+   ]
+  },
+  {
+   "tag": "נח",
+   "any": [
+    "=נח",
+    "=noah"
+   ]
+  },
+  {
+   "tag": "דב",
+   "any": [
+    "=דב",
+    "=dov"
+   ]
+  },
+  {
+   "tag": "איה",
+   "any": [
+    "=איה"
+   ]
+  },
+  {
+   "tag": "עדין",
+   "any": [
+    "=עדין"
+   ]
+  }
+ ],
+ "person_names_for_description": {
+  "בינה שמחה": "בינה"
+ },
+ "entities": [
+  {
+   "id": "company",
+   "tag": "צור הדרכות בע\"מ",
+   "desc": "צור הדרכות בע\"מ",
+   "any": [
+    "צור הדרכות",
+    "צור הדכרות",
+    "צור הדרכו"
+   ],
+   "path_any": [
+    "02 - צור הדרכות",
+    "חשבונות צור הדרכות",
+    "צור הדרכות חשבוניות"
+   ]
+  },
+  {
+   "id": "osek",
+   "tag": "עוסק מורשה אלעד צור",
+   "desc": "עוסק מורשה אלעד צור",
+   "any": [
+    "עוסק מורשה",
+    "חשבון מורשה"
+   ],
+   "path_any": [
+    "03 - חשבונאות ומסמכים/חשבוניות/",
+    "אלעד צור חשבוניות"
+   ]
+  }
+ ],
+ "not_admin": {
+  "path_any": [
+   "_files/",
+   "/מוזיקת רקע",
+   "/letters",
+   "/שידוכים",
+   "/אישים",
+   "/שמירת קשר",
+   "/אלישע בר מצווה",
+   "/חתונה",
+   "/גן סמדר",
+   "/train schedules",
+   "/בניית פוטון",
+   "/הדמיות שיפוץ",
+   "/sigcmp",
+   "/מחשב כף יד",
+   "/בינה/python",
+   "02 - צור הדרכות/גרפיקה",
+   "02 - צור הדרכות/יחצ",
+   "02 - צור הדרכות/מרכז אפרת צור",
+   "02 - צור הדרכות/תכנים והדרכה",
+   "02 - צור הדרכות/שיווק ומכירות",
+   "02 - צור הדרכות/וובינרים",
+   "02 - צור הדרכות/הדרכת כלות",
+   "02 - צור הדרכות/עין הסערה",
+   "/פרסום צור הדרכות",
+   "/גרפיקה אפרת",
+   "/עדויות אפרת",
+   "/קורס ליבת גברים",
+   "/קורס תקשורת זוגית",
+   "/לובי מטפלים",
+   "/תכניות טיולים",
+   "/חומר על התהנלות",
+   "/מנוי/",
+   "/ניהול עובדים",
+   "/פסטנגר",
+   "/הרצאות אלעד",
+   "/יועצים פיננסיים קולגות",
+   "04 - תמונות/אלעד תמונות/elad ai pics",
+   "04 - תמונות/אלעד תמונות/elad good pictures",
+   "04 - תמונות/אלעד תמונות/elad training set",
+   "04 - תמונות/אלעד תמונות/social media",
+   "04 - תמונות/אלעד תמונות/קצת מהשטח",
+   "04 - תמונות/אלעד תמונות/תמונות"
+  ],
+  "name_any": [
+   "albumart",
+   "=folder",
+   "diy ",
+   "right arrow",
+   "arrow right",
+   "hqdefault",
+   "קטלוג",
+   "dall·e",
+   "dall e",
+   "replicate prediction",
+   "untitled design",
+   "chatgpt image",
+   "מדריך לצילום",
+   "באנר",
+   "banner",
+   "profile mask",
+   "b4g launcher",
+   "tinyboomlogo",
+   "einstein",
+   "financialtrackertemplate",
+   "whiteboard"
+  ]
+ },
+ "path_modifiers": [
+  {
+   "path_any": [
+    "02 - צור הדרכות"
+   ],
+   "cats": [
+    "ids"
+   ],
+   "alias": false,
+   "desc_suffix": "עותק שצורף למסמכי החברה"
+  },
+  {
+   "path_any": [
+    "/תלונה לרשות שוק ההון"
+   ],
+   "add_tags": [
+    "תלונה הראל"
+   ],
+   "alias": false,
+   "desc_suffix": "צורף לתלונה לרשות שוק ההון נגד הראל 2026"
+  },
+  {
+   "path_any": [
+    "/[ocr]",
+    "/ocr"
+   ],
+   "alias": false,
+   "desc_suffix": "עותק OCR"
+  }
+ ],
+ "doc_types": [
+  {
+   "id": "id_send_copy",
+   "tags": [
+    "תעודת זהות",
+    "לשליחה"
+   ],
+   "cat": "ids",
+   "alias": true,
+   "all": [
+    "תעודת זהות",
+    "אלעד",
+    "לשליחה"
+   ],
+   "persons": [
+    "אלעד"
+   ],
+   "desc": "תעודת זהות של אלעד עם תאריך ההנפקה מכוסה",
+   "note": "זה העותק לשליחה לגורמים חיצוניים",
+   "is_send_copy": true
+  },
+  {
+   "id": "complaint_letter",
+   "tags": [
+    "תלונה הראל"
+   ],
+   "cat": "insurance",
+   "alias": true,
+   "all": [
+    "מכתב התלונה"
+   ],
+   "desc": "מכתב התלונה המלא לרשות שוק ההון נגד הראל"
+  },
+  {
+   "id": "id_and_sefach",
+   "tags": [
+    "תעודת זהות",
+    "ספח"
+   ],
+   "cat": "ids",
+   "alias": true,
+   "all": [
+    "זהות",
+    "~ספח"
+   ],
+   "desc": "תעודת זהות וספח",
+   "id_original": true
+  },
+  {
+   "id": "sefach",
+   "tags": [
+    "ספח"
+   ],
+   "cat": "ids",
+   "alias": true,
+   "any": [
+    "~ספח"
+   ],
+   "desc": "ספח תעודת זהות",
+   "id_original": true
+  },
+  {
+   "id": "id_card",
+   "tags": [
+    "תעודת זהות"
+   ],
+   "cat": "ids",
+   "alias": true,
+   "any": [
+    "תעודת זהות",
+    "תעודתזהות",
+    "=תז",
+    "id card"
+   ],
+   "path_none": [
+    "/משכורות"
+   ],
+   "desc": "תעודת זהות",
+   "id_original": true
+  },
+  {
+   "id": "id_card_employee",
+   "tags": [
+    "תעודת זהות"
+   ],
+   "cat": "company",
+   "alias": false,
+   "any": [
+    "תעודת זהות"
+   ],
+   "desc": "תעודת זהות של עובד",
+   "no_text": true
+  },
+  {
+   "id": "birth_notice",
+   "tags": [
+    "הודעת לידה"
+   ],
+   "cat": "ids",
+   "alias": true,
+   "any": [
+    "תלוש להורים"
+   ],
+   "desc": "הודעת לידה ממשרד הפנים"
+  },
+  {
+   "id": "birth_cert",
+   "tags": [
+    "תעודת לידה"
+   ],
+   "cat": "ids",
+   "alias": true,
+   "any": [
+    "תעודת לידה",
+    "birth certificate"
+   ],
+   "desc": "תעודת לידה"
+  },
+  {
+   "id": "marriage_cert",
+   "tags": [
+    "תעודת נישואין"
+   ],
+   "cat": "ids",
+   "alias": true,
+   "any": [
+    "תעודת נישואין"
+   ],
+   "desc": "תעודת נישואין"
+  },
+  {
+   "id": "pop_registry",
+   "tags": [
+    "תמצית רישום"
+   ],
+   "cat": "ids",
+   "alias": true,
+   "any": [
+    "תמצית רישום",
+    "מרשם האוכלוסין",
+    "תמצית ממרשם"
+   ],
+   "desc": "תמצית רישום ממרשם האוכלוסין"
+  },
+  {
+   "id": "us_passport_app",
+   "tags": [
+    "אזרחות ארה\"ב"
+   ],
+   "cat": "us",
+   "alias": false,
+   "any": [
+    "passportapplication",
+    "passport application",
+    "בקשת דרכון ארהב",
+    "minors under age",
+    "first time passports",
+    "=appointment"
+   ],
+   "desc": "בקשת דרכון אמריקאי"
+  },
+  {
+   "id": "passport",
+   "tags": [
+    "דרכון"
+   ],
+   "cat": "ids",
+   "alias": true,
+   "any": [
+    "דרכון",
+    "passport"
+   ],
+   "desc": "דרכון"
+  },
+  {
+   "id": "signature",
+   "tags": [
+    "חתימה"
+   ],
+   "cat": "ids",
+   "alias": true,
+   "any": [
+    "חתימה",
+    "elad sign"
+   ],
+   "path_any": [
+    "04 - תמונות/"
+   ],
+   "ext": [
+    ".png",
+    ".jpg",
+    ".jpeg"
+   ],
+   "desc": "תמונת חתימה לחתימה על מסמכים"
+  },
+  {
+   "id": "us_tax_return",
+   "tags": [
+    "דוח מס ארה\"ב"
+   ],
+   "cat": "us",
+   "alias": true,
+   "any": [
+    "tax return",
+    "amended return"
+   ],
+   "none": [
+    "signature",
+    "signture",
+    "siganture"
+   ],
+   "desc": "דוח מס אמריקאי (1040)"
+  },
+  {
+   "id": "us_signature_pages",
+   "tags": [
+    "דוח מס ארה\"ב"
+   ],
+   "cat": "us",
+   "alias": false,
+   "any": [
+    "signature page",
+    "signture page",
+    "siganture page",
+    "=8879",
+    "=114a"
+   ],
+   "desc": "דפי חתימה לדוח המס האמריקאי"
+  },
+  {
+   "id": "fbar",
+   "tags": [
+    "FBAR"
+   ],
+   "cat": "us",
+   "alias": false,
+   "any": [
+    "fbar"
+   ],
+   "desc": "דיווח FBAR על חשבונות בחו\"ל"
+  },
+  {
+   "id": "w9",
+   "tags": [
+    "W9"
+   ],
+   "cat": "us",
+   "alias": true,
+   "any": [
+    "=w9",
+    "=w92",
+    "w9 1st"
+   ],
+   "desc": "טופס W9 (הצהרת אזרח אמריקאי)"
+  },
+  {
+   "id": "ssn",
+   "tags": [
+    "Social Security"
+   ],
+   "cat": "us",
+   "alias": true,
+   "any": [
+    "social security card",
+    "=ssn"
+   ],
+   "desc": "בקשה לכרטיס Social Security"
+  },
+  {
+   "id": "us_ss_docs",
+   "tags": [
+    "Social Security"
+   ],
+   "cat": "us",
+   "alias": false,
+   "any": [
+    "social security",
+    "streamline",
+    "virtuetax"
+   ],
+   "desc": "מסמך ביטוח לאומי אמריקאי / הסדרת מס"
+  },
+  {
+   "id": "n600k",
+   "tags": [
+    "אזרחות ארה\"ב"
+   ],
+   "cat": "us",
+   "alias": true,
+   "any": [
+    "n600k",
+    "n 600k"
+   ],
+   "desc": "בקשת אזרחות אמריקאית לילד (N-600K)"
+  },
+  {
+   "id": "nonresident_cert",
+   "tags": [
+    "אישור מס"
+   ],
+   "cat": "us",
+   "alias": true,
+   "any": [
+    "certnonresidents"
+   ],
+   "desc": "אישור תושבות / גילוי מרצון מול רשות המסים"
+  },
+  {
+   "id": "us_voter",
+   "tags": [
+    "בחירות ארה\"ב"
+   ],
+   "cat": "us",
+   "alias": false,
+   "any": [
+    "voter",
+    "=fpca",
+    "בחירות פדרליות"
+   ],
+   "desc": "הרשמה להצבעה בבחירות בארה\"ב"
+  },
+  {
+   "id": "us_ira",
+   "tags": [
+    "IRA"
+   ],
+   "cat": "pension",
+   "alias": false,
+   "any": [
+    "=ira",
+    "iraReport",
+    "אחזקות ira"
+   ],
+   "desc": "דוח אחזקות IRA"
+  },
+  {
+   "id": "driving_license",
+   "tags": [
+    "רישיון נהיגה"
+   ],
+   "cat": "vehicle",
+   "alias": true,
+   "any": [
+    "רשיון נהיגה",
+    "רישיון נהיגה"
+   ],
+   "desc": "רישיון נהיגה"
+  },
+  {
+   "id": "vehicle_operating",
+   "tags": [
+    "רישיון רכב"
+   ],
+   "cat": "vehicle",
+   "alias": true,
+   "any": [
+    "רישיון הפעלה"
+   ],
+   "desc": "רישיון הפעלה לרכב תיירות"
+  },
+  {
+   "id": "vehicle_license",
+   "tags": [
+    "רישיון רכב"
+   ],
+   "cat": "vehicle",
+   "alias": true,
+   "any": [
+    "רשיון רכב",
+    "רישיון רכב",
+    "carlicense",
+    "רשיון 20"
+   ],
+   "desc": "רישיון רכב"
+  },
+  {
+   "id": "vehicle_insurance",
+   "tags": [
+    "ביטוח רכב"
+   ],
+   "cat": "vehicle",
+   "alias": true,
+   "any": [
+    "ביטוח חובה",
+    "צד ג",
+    "חובה לרישוי",
+    "=חובה",
+    "תעודת ביטוח"
+   ],
+   "desc": "ביטוח רכב (חובה / צד ג)",
+   "no_text": true
+  },
+  {
+   "id": "vehicle_ownership",
+   "tags": [
+    "רכב"
+   ],
+   "cat": "vehicle",
+   "alias": true,
+   "any": [
+    "העברת בעלות",
+    "שינוי בעלות",
+    "רישום רכב",
+    "בקשה לרישום רכב"
+   ],
+   "desc": "העברת בעלות / רישום רכב"
+  },
+  {
+   "id": "vehicle_lien",
+   "tags": [
+    "שעבוד"
+   ],
+   "cat": "vehicle",
+   "alias": true,
+   "any": [
+    "שיעבוד",
+    "שעבוד"
+   ],
+   "desc": "מסמך שעבוד רכב"
+  },
+  {
+   "id": "vehicle_misc",
+   "tags": [
+    "רכב"
+   ],
+   "cat": "vehicle",
+   "alias": false,
+   "any": [
+    "איתוראן",
+    "מעקב רכב",
+    "ירידת ערך",
+    "הסכם התקשרות השכרה",
+    "למכירה"
+   ],
+   "desc": "מסמך רכב",
+   "no_text": true
+  },
+  {
+   "id": "incorporation",
+   "tags": [
+    "תעודת התאגדות"
+   ],
+   "cat": "company",
+   "alias": true,
+   "any": [
+    "תעודת התאגדות"
+   ],
+   "desc": "תעודת התאגדות של החברה"
+  },
+  {
+   "id": "articles",
+   "tags": [
+    "תקנון חברה"
+   ],
+   "cat": "company",
+   "alias": true,
+   "any": [
+    "תקנון חבר"
+   ],
+   "desc": "תקנון החברה"
+  },
+  {
+   "id": "signing_protocol",
+   "tags": [
+    "פרוטוקול"
+   ],
+   "cat": "company",
+   "alias": true,
+   "any": [
+    "פרוטוקול",
+    "זכויות חתימה",
+    "מורשי חתימה",
+    "הקצאת מניות",
+    "החלטה על פתיחת חשבון"
+   ],
+   "desc": "פרוטוקול / החלטת חברה (זכויות חתימה)"
+  },
+  {
+   "id": "company_extract",
+   "tags": [
+    "נסח חברה"
+   ],
+   "cat": "company",
+   "alias": true,
+   "any": [
+    "נסח חברה"
+   ],
+   "desc": "נסח חברה מרשם החברות"
+  },
+  {
+   "id": "clearing_agreement",
+   "tags": [
+    "הסכם סליקה"
+   ],
+   "cat": "company",
+   "alias": true,
+   "any": [
+    "הסכם בית עסק",
+    "הצטרפות לסליקה",
+    "סליקה מרחוק"
+   ],
+   "desc": "הסכם סליקת אשראי"
+  },
+  {
+   "id": "lawyer_verify",
+   "tags": [
+    "אישור עו\"ד"
+   ],
+   "cat": "company",
+   "alias": false,
+   "any": [
+    "אימות פרטים עו",
+    "אישור עו"
+   ],
+   "desc": "אישור עורך דין לפתיחת חשבון / סליקה"
+  },
+  {
+   "id": "osek_cert",
+   "tags": [
+    "תעודת עוסק מורשה"
+   ],
+   "cat": "@entity",
+   "cat_default": "osek",
+   "alias": true,
+   "any": [
+    "תעודת עוסק מורשה"
+   ],
+   "desc": "תעודת עוסק מורשה"
+  },
+  {
+   "id": "osek_cert_img",
+   "tags": [
+    "תעודת עוסק מורשה"
+   ],
+   "cat": "osek",
+   "alias": true,
+   "all": [
+    "עוסק מורשה"
+   ],
+   "path_any": [
+    "/תעודות"
+   ],
+   "desc": "תעודת עוסק מורשה"
+  },
+  {
+   "id": "withholding",
+   "tags": [
+    "אישור מס"
+   ],
+   "cat": "@entity",
+   "cat_default": "osek",
+   "alias": true,
+   "any": [
+    "ניכוי מס במקור",
+    "ניהול ספרים"
+   ],
+   "desc": "אישור ניכוי מס במקור / ניהול ספרים"
+  },
+  {
+   "id": "vat_exempt",
+   "tags": [
+    "אישור מס"
+   ],
+   "cat": "@entity",
+   "cat_default": "osek",
+   "alias": true,
+   "any": [
+    "פטור ממעמ",
+    "פטור ממע\"מ"
+   ],
+   "desc": "אישור פטור ממע\"מ"
+  },
+  {
+   "id": "vat_affidavit",
+   "tags": [
+    "מע\"מ"
+   ],
+   "cat": "@entity",
+   "cat_default": "osek",
+   "alias": false,
+   "any": [
+    "תצהיר למעמ",
+    "תצהיר מעמ",
+    "תצהיר דוחות מעמ"
+   ],
+   "desc": "תצהיר למע\"מ"
+  },
+  {
+   "id": "cert_specific",
+   "tags": [
+    "תעודה"
+   ],
+   "cat": "certs",
+   "alias": true,
+   "any": [
+    "ייעוץ משכנתא ומימון",
+    "יועץ עסקי",
+    "יועץ פיננסי",
+    "תעודת הסמכה",
+    "תעודת חבר"
+   ],
+   "desc": "תעודת הסמכה מקצועית"
+  },
+  {
+   "id": "insurance_annual",
+   "tags": [
+    "דוח שנתי"
+   ],
+   "cat": "insurance",
+   "alias": false,
+   "any": [
+    "דוח שנתי",
+    "עדכון בנוגע לפוליסה",
+    "=הודעה",
+    "מכתב הצטרפות"
+   ],
+   "path_any": [
+    "/ביטוח",
+    "הראל"
+   ],
+   "desc": "דוח / הודעה שנתית מחברת הביטוח"
+  },
+  {
+   "id": "clearing_house",
+   "tags": [
+    "דוח מסלקה"
+   ],
+   "cat": "pension",
+   "alias": false,
+   "any": [
+    "מסלקה"
+   ],
+   "desc": "דוח המסלקה הפנסיונית"
+  },
+  {
+   "id": "travel",
+   "tags": [
+    "נסיעות"
+   ],
+   "cat": "misc",
+   "alias": false,
+   "any": [
+    "ביטוח מגן נסיעה",
+    "נסיעות לחול",
+    "insurancedetails",
+    "הזמנת רכב",
+    "=לינה",
+    "הקפצה",
+    "order confirmation",
+    "=טיסות",
+    "toreninsurance"
+   ],
+   "path_any": [
+    "/טיולים",
+    "/טיסות",
+    "/חו''ל",
+    "/חו\"ל"
+   ],
+   "desc": "מסמך נסיעה לחו\"ל (הזמנות / ביטוח נסיעות)",
+   "no_text": true
+  },
+  {
+   "id": "professional_liability",
+   "tags": [
+    "פוליסת ביטוח"
+   ],
+   "cat": "insurance",
+   "alias": true,
+   "any": [
+    "אחריות מקצועית",
+    "ביטוח מקצועי",
+    "ביטוח של יורם",
+    "letter harel",
+    "tofes bituach"
+   ],
+   "desc": "ביטוח אחריות מקצועית"
+  },
+  {
+   "id": "insurance_policy",
+   "tags": [
+    "פוליסת ביטוח"
+   ],
+   "cat": "insurance",
+   "alias": true,
+   "any": [
+    "פוליסה",
+    "פוליסת",
+    "policy",
+    "דף פרטי ביטוח",
+    "דף פרטי הביטוח",
+    "רובד",
+    "מטריה",
+    "ריסק",
+    "ביטוח משכנתא",
+    "preferred platinum",
+    "דוח מצב ביטוח"
+   ],
+   "desc": "פוליסת ביטוח"
+  },
+  {
+   "id": "insurance_forms",
+   "tags": [
+    "ביטוח"
+   ],
+   "cat": "insurance",
+   "alias": false,
+   "any": [
+    "הצעה לביטוח",
+    "הצעה  לביטוח",
+    "טופס ביטוח",
+    "הצהרת בריאות",
+    "תנאי חיתום",
+    "חתם",
+    "שינויי פוליסת",
+    "שינוי ביטוח",
+    "דרישות לביטוח",
+    "פירוט ביטוח",
+    "ביטוח חיים",
+    "ביטוח בריאות",
+    "קבלת ביטוח",
+    "ביטחים",
+    "תביעת ביטוח",
+    "הגדלת חתימה",
+    "דוגמת חתימה"
+   ],
+   "desc": "מסמך ביטוח (הצעה / חיתום / שינוי)",
+   "no_text": true
+  },
+  {
+   "id": "medical_summary",
+   "tags": [
+    "רפואי"
+   ],
+   "cat": "medical",
+   "alias": true,
+   "any": [
+    "סיכום נוירולוג",
+    "סיכום מידע רפואי",
+    "מלנומה"
+   ],
+   "desc": "סיכום רפואי"
+  },
+  {
+   "id": "medical",
+   "tags": [
+    "רפואי"
+   ],
+   "cat": "medical",
+   "alias": false,
+   "any": [
+    "רופא",
+    "=עור",
+    "כירוגיה",
+    "מכבי",
+    "רפואי",
+    "greenpass",
+    "טופס 17"
+   ],
+   "desc": "מסמך רפואי",
+   "no_text": true
+  },
+  {
+   "id": "pension_agreement",
+   "tags": [
+    "הסכם"
+   ],
+   "cat": "pension",
+   "alias": true,
+   "any": [
+    "נספח להסכם הצטרפות",
+    "הסכם הצטרפות",
+    "openaccount",
+    "הסכם משווק",
+    "הכר את הלקוח",
+    "איחוד חשבונות",
+    "ihud heshbonot",
+    "טופס העברה קרן פנסיה"
+   ],
+   "desc": "הסכם / הצטרפות לקרן פנסיה, גמל או השתלמות"
+  },
+  {
+   "id": "pension_withdrawal",
+   "tags": [
+    "בקשת משיכה"
+   ],
+   "cat": "pension",
+   "alias": false,
+   "any": [
+    "משיכת כספים",
+    "בקשת משיכה",
+    "מכתב משיכה",
+    "למשיכת"
+   ],
+   "desc": "בקשת משיכה מקרן השתלמות"
+  },
+  {
+   "id": "pension_report",
+   "tags": [
+    "פנסיה וחיסכון"
+   ],
+   "cat": "pension",
+   "alias": false,
+   "any": [
+    "פנסיה",
+    "השתלמות",
+    "גמל",
+    "מיטב",
+    "meitav",
+    "הפקדות",
+    "dimutweb",
+    "incomereport",
+    "דוח נזילות",
+    "migdal",
+    "מגדל",
+    "תמחיר",
+    "קופות גמל",
+    "ביטקוין"
+   ],
+   "desc": "דוח / מסמך פנסיה, גמל או השתלמות",
+   "no_text": true
+  },
+  {
+   "id": "re_contract",
+   "tags": [
+    "חוזה"
+   ],
+   "cat": "realestate",
+   "alias": true,
+   "any": [
+    "חוזה מכר",
+    "חוזה שכירות",
+    "הסכם שכירות",
+    "התחייבות לצאת"
+   ],
+   "desc": "חוזה נדל\"ן (מכר / שכירות)"
+  },
+  {
+   "id": "mortgage_contract",
+   "tags": [
+    "משכנתא"
+   ],
+   "cat": "realestate",
+   "alias": true,
+   "any": [
+    "רישום משכון",
+    "הודעת משכון",
+    "משכנתא אפרת ואלעד"
+   ],
+   "desc": "הסכם / רישום משכנתא"
+  },
+  {
+   "id": "re_rights",
+   "tags": [
+    "אישור זכויות"
+   ],
+   "cat": "realestate",
+   "alias": true,
+   "any": [
+    "העברת זכויות",
+    "אישור זכויות",
+    "רישום זכויות",
+    "מינהל",
+    "מנהל מקרקעי"
+   ],
+   "desc": "אישור / רישום זכויות בנכס"
+  },
+  {
+   "id": "re_permit",
+   "tags": [
+    "נדל\"ן"
+   ],
+   "cat": "realestate",
+   "alias": true,
+   "any": [
+    "טופס 4",
+    "תעודת גמר",
+    "היתר בניה",
+    "=שמאי",
+    "ערבות",
+    "גמר חשבון",
+    "מכתב התראה",
+    "דוח בדיקת מבנה",
+    "דו ח מסירה",
+    "תשריט",
+    "מס שבח",
+    "=7098"
+   ],
+   "desc": "מסמך נכס (טופס 4 / היתר / שמאות / ערבות)"
+  },
+  {
+   "id": "mortgage",
+   "tags": [
+    "משכנתא"
+   ],
+   "cat": "realestate",
+   "alias": false,
+   "any": [
+    "משכנתא",
+    "mortgages",
+    "תדריך ללווה",
+    "=שובר",
+    "תמהילים"
+   ],
+   "desc": "מסמך משכנתא"
+  },
+  {
+   "id": "warranty",
+   "tags": [
+    "תעודת אחריות"
+   ],
+   "cat": "realestate",
+   "alias": false,
+   "any": [
+    "אחריות",
+    "הוראות הפעלה",
+    "קריאת שירות",
+    "רשימת ספקים",
+    "דף פתיח"
+   ],
+   "desc": "תעודת אחריות / הוראות הפעלה",
+   "no_text": true
+  },
+  {
+   "id": "re_plan",
+   "tags": [
+    "נדל\"ן"
+   ],
+   "cat": "realestate",
+   "alias": false,
+   "any": [
+    "תכנית",
+    "open layout",
+    "קומת גג",
+    "ועד בית",
+    "חשמן",
+    "מכבי אש",
+    "הצעת שכר טרחה",
+    "הצעת מחיר"
+   ],
+   "path_any": [
+    "/נדלן",
+    "/בית",
+    "פולינה",
+    "/כרמיאל",
+    "דירה"
+   ],
+   "desc": "מסמך דירה (תכנית / ועד בית / הצעה)",
+   "no_text": true
+  },
+  {
+   "id": "credit_line",
+   "tags": [
+    "מסגרת אשראי"
+   ],
+   "cat": "bank",
+   "alias": true,
+   "any": [
+    "מסגרת",
+    "misgeret"
+   ],
+   "desc": "הסכם מסגרת אשראי בבנק"
+  },
+  {
+   "id": "loan",
+   "tags": [
+    "הלוואה"
+   ],
+   "cat": "bank",
+   "alias": true,
+   "any": [
+    "הלוואה לרכישת",
+    "הקמת הלוואה",
+    "הלוואה לכל מטרה",
+    "מסמכי הלוואה"
+   ],
+   "desc": "הסכם הלוואה"
+  },
+  {
+   "id": "loan_misc",
+   "tags": [
+    "הלוואה"
+   ],
+   "cat": "bank",
+   "alias": false,
+   "any": [
+    "הלוואה",
+    "פירעון מוקדם",
+    "פרטיכל",
+    "מכתב דחייה",
+    "התחייבות סוכן ביטוח",
+    "חומר לבקשת"
+   ],
+   "desc": "מסמך הלוואה"
+  },
+  {
+   "id": "bank_id",
+   "tags": [
+    "אישור בנק"
+   ],
+   "cat": "bank",
+   "alias": false,
+   "any": [
+    "tzbankait"
+   ],
+   "desc": "תעודת זהות בנקאית (סיכום חשבון שנתי מהבנק)"
+  },
+  {
+   "id": "bank_confirm",
+   "tags": [
+    "אישור בנק"
+   ],
+   "cat": "bank",
+   "alias": true,
+   "any": [
+    "אישור ניהול חשבון",
+    "אישור קיום",
+    "פתיחת חשבון",
+    "tzbankait",
+    "הצהרת נאמנות",
+    "הצהרת תאגיד",
+    "תושבות",
+    "הצהרה אזרחות",
+    "מסחר בניירות ערך",
+    "ויתור על סודיות"
+   ],
+   "desc": "אישור ניהול חשבון / הצהרה לבנק"
+  },
+  {
+   "id": "credit_card_agreement",
+   "tags": [
+    "כרטיס אשראי"
+   ],
+   "cat": "bank",
+   "alias": true,
+   "any": [
+    "הסכם כרטיס",
+    "חתימה על כרטיס אשראי",
+    "הזמנת כרטיס",
+    "חוברת ישראכרט"
+   ],
+   "desc": "הסכם כרטיס אשראי"
+  },
+  {
+   "id": "card_dispute",
+   "tags": [
+    "כרטיס אשראי"
+   ],
+   "cat": "bank",
+   "alias": false,
+   "any": [
+    "הכחשת עסק"
+   ],
+   "desc": "הכחשת עסקה בכרטיס אשראי"
+  },
+  {
+   "id": "bank_authority",
+   "tags": [
+    "הוראת קבע"
+   ],
+   "cat": "bank",
+   "alias": false,
+   "any": [
+    "הרשאה חיוב",
+    "הרשאה לחיוב",
+    "הוראת קבע",
+    "הרשאה יופיי",
+    "managepermissions",
+    "מעקב הוראות קבע"
+   ],
+   "desc": "הרשאה לחיוב / הוראת קבע"
+  },
+  {
+   "id": "fx_transfer",
+   "tags": [
+    "העברה בנקאית"
+   ],
+   "cat": "bank",
+   "alias": false,
+   "any": [
+    "מטח",
+    "תושב חוץ",
+    "swiftexport",
+    "=transfer",
+    "העברה ל",
+    "העברת תשלום",
+    "העברת כסף"
+   ],
+   "desc": "העברה בנקאית",
+   "no_text": true
+  },
+  {
+   "id": "credit_statement",
+   "tags": [
+    "פירוט אשראי"
+   ],
+   "cat": "bank",
+   "alias": false,
+   "any": [
+    "כרטיסי אשראי תצוגה",
+    "פירוט",
+    "תנועות אשראי",
+    "הוצאות אשראי",
+    "אשראי חשבון",
+    "עסק אשראי",
+    "בית אשראי",
+    "חברה אשראי",
+    "אלעד צור אשראי",
+    "אשראי  אפרת",
+    "אשראי אפרת",
+    "ישראכרט",
+    "=אשראי"
+   ],
+   "desc": "פירוט חיובי כרטיס אשראי",
+   "no_text": true
+  },
+  {
+   "id": "bank_statement",
+   "tags": [
+    "דף חשבון"
+   ],
+   "cat": "bank",
+   "alias": false,
+   "any": [
+    "account statement",
+    "דף חשבון",
+    "דפי חשבון",
+    "תנועות",
+    "accountactivity",
+    "accountmovements",
+    "יתרה ותנועות",
+    "bank message",
+    "banker messages",
+    "=export",
+    "tnuot",
+    "שנה אחורה",
+    "שנה אחרורה",
+    "חשבון עסקי",
+    "חשבון בנק",
+    "בנק ",
+    "יתרות",
+    "תדפיס",
+    "automatic message",
+    "שיערוך",
+    "התאמות בנק",
+    "יתרה"
+   ],
+   "desc": "דף חשבון / תנועות בנק",
+   "no_text": true
+  },
+  {
+   "id": "tax_assessment",
+   "tags": [
+    "שומת מס"
+   ],
+   "cat": "tax",
+   "alias": true,
+   "any": [
+    "שומת מס",
+    "=שומה"
+   ],
+   "desc": "שומת מס הכנסה"
+  },
+  {
+   "id": "form106",
+   "tags": [
+    "טופס 106"
+   ],
+   "cat": "tax",
+   "alias": false,
+   "any": [
+    "=106"
+   ],
+   "desc": "טופס 106 (סיכום שכר שנתי)"
+  },
+  {
+   "id": "payslip",
+   "tags": [
+    "תלוש משכורת"
+   ],
+   "cat": "tax",
+   "alias": false,
+   "any": [
+    "תלוש",
+    "משכורת",
+    "טופס 102",
+    "טופס 101",
+    "=101"
+   ],
+   "desc": "תלוש / טופס שכר"
+  },
+  {
+   "id": "nii",
+   "tags": [
+    "ביטוח לאומי"
+   ],
+   "cat": "tax",
+   "alias": false,
+   "any": [
+    "ביטוח לאומי",
+    "דמי לידה",
+    "שירות התעסוקה",
+    "תגמולי מילואים",
+    "אישור מעסיק",
+    "אישור למס הכנסה",
+    "אישור שנתי למס",
+    "אישור פירוט חשבון"
+   ],
+   "desc": "מסמך ביטוח לאומי / אישור למס"
+  },
+  {
+   "id": "annual_report",
+   "tags": [
+    "דוח שנתי"
+   ],
+   "cat": "tax",
+   "alias": true,
+   "alias_ext": [
+    ".pdf"
+   ],
+   "any": [
+    "דוח שנתי",
+    "דוחות כספיים",
+    "דוח אישי",
+    "דוח החברה",
+    "מאזן בוחן",
+    "התקבל דוח",
+    "רווח והפסד",
+    "=1301",
+    "=1214",
+    "דוחות 20",
+    "דוח 20",
+    "=דוחות"
+   ],
+   "desc": "דוח שנתי / דוחות כספיים"
+  },
+  {
+   "id": "fine",
+   "tags": [
+    "קנס"
+   ],
+   "cat": "misc",
+   "alias": false,
+   "any": [
+    "קנס"
+   ],
+   "desc": "תשלום קנס"
+  },
+  {
+   "id": "police",
+   "tags": [
+    "משטרה"
+   ],
+   "cat": "misc",
+   "alias": false,
+   "any": [
+    "הגשת תלונה"
+   ],
+   "desc": "אישור הגשת תלונה במשטרה"
+  },
+  {
+   "id": "army",
+   "tags": [
+    "צבא"
+   ],
+   "cat": "army",
+   "alias": true,
+   "any": [
+    "מילואים",
+    "התנדבות",
+    "אוגדת",
+    "אישור בטחוני",
+    "מהלך שירות",
+    "שירות צבאי"
+   ],
+   "desc": "מסמך צבא / מילואים"
+  },
+  {
+   "id": "kids",
+   "tags": [
+    "חינוך"
+   ],
+   "cat": "kids",
+   "alias": false,
+   "any": [
+    "מעון",
+    "טיפת חלב",
+    "מערכת שעות",
+    "מערכת למידה",
+    "בר מצווה",
+    "barmitzvah",
+    "barmitvah",
+    "כיתה",
+    "נוער מוכשר",
+    "biumath",
+    "לוח לימודים",
+    "דף מדבקות",
+    "טופס התחייבות"
+   ],
+   "desc": "מסמך ילדים / חינוך",
+   "no_text": true
+  },
+  {
+   "id": "bagrut",
+   "tags": [
+    "תעודה"
+   ],
+   "cat": "certs",
+   "alias": true,
+   "any": [
+    "bagrut",
+    "בגרות"
+   ],
+   "desc": "תעודת בגרות"
+  },
+  {
+   "id": "psychometric",
+   "tags": [
+    "תעודה"
+   ],
+   "cat": "certs",
+   "alias": true,
+   "any": [
+    "פסיכומטרי"
+   ],
+   "desc": "תוצאות מבחן פסיכומטרי"
+  },
+  {
+   "id": "guide_license",
+   "tags": [
+    "רישיון מורה דרך"
+   ],
+   "cat": "certs",
+   "alias": true,
+   "any": [
+    "מורה דרך"
+   ],
+   "persons": [
+    "אלעד"
+   ],
+   "desc": "רישיון / תעודת מורה דרך"
+  },
+  {
+   "id": "agent_license",
+   "tags": [
+    "תעודה"
+   ],
+   "cat": "certs",
+   "alias": true,
+   "any": [
+    "רישיון לסוכן",
+    "רשיון לסוכן"
+   ],
+   "desc": "רישיון סוכן ביטוח"
+  },
+  {
+   "id": "certificate",
+   "tags": [
+    "תעודה"
+   ],
+   "cat": "certs",
+   "alias": true,
+   "any": [
+    "תעודת הסמכה",
+    "תעודת חבר",
+    "תעודת מורה דרך",
+    "מורה דרך",
+    "רישיון לסוכן",
+    "רשיון לסוכן",
+    "תעודה",
+    "bagrut",
+    "בגרות",
+    "פסיכומטרי",
+    "תעודות אלעד",
+    "יועץ עסקי",
+    "יועץ פיננסי",
+    "ייעוץ משכנתא ומימון"
+   ],
+   "desc": "תעודה / הסמכה מקצועית"
+  },
+  {
+   "id": "cv",
+   "tags": [
+    "קורות חיים"
+   ],
+   "cat": "certs",
+   "alias": true,
+   "alias_ext": [
+    ".pdf"
+   ],
+   "any": [
+    "קורות חיים",
+    "=cv",
+    "elad cv"
+   ],
+   "desc": "קורות חיים"
+  },
+  {
+   "id": "thanks_letter",
+   "tags": [
+    "מכתב"
+   ],
+   "cat": "certs",
+   "alias": false,
+   "any": [
+    "מכתב תודה"
+   ],
+   "desc": "מכתב תודה"
+  },
+  {
+   "id": "vendor_doc",
+   "tags": [
+    "ספק"
+   ],
+   "cat": "company",
+   "alias": false,
+   "any": [
+    "טופס ניוד",
+    "טופס ספק",
+    "הקמת ספק",
+    "תעריפון",
+    "חוברת תפעול",
+    "טופס הצטרפות למאגר",
+    "קבלת מסמכים",
+    "בנקאות בתקשורת"
+   ],
+   "desc": "מסמך ספק / מערכת (סליקה, מרכזיה, ספקים)"
+  },
+  {
+   "id": "contract",
+   "tags": [
+    "חוזה"
+   ],
+   "cat": "contracts",
+   "alias": true,
+   "any": [
+    "הסכם פרילנסר",
+    "הסכם שכר טרחה",
+    "ייפוי כח",
+    "ייפוי כוח",
+    "הסכם",
+    "חוזה"
+   ],
+   "desc": "חוזה / הסכם",
+   "no_text": true
+  },
+  {
+   "id": "quote",
+   "tags": [
+    "הצעת מחיר"
+   ],
+   "cat": "misc",
+   "alias": false,
+   "any": [
+    "הצעת מחיר",
+    "=quote",
+    "proposal"
+   ],
+   "desc": "הצעת מחיר",
+   "no_text": true
+  },
+  {
+   "id": "invoice",
+   "tags": [
+    "חשבונית"
+   ],
+   "cat": "@entity",
+   "cat_default": "misc",
+   "alias": false,
+   "any": [
+    "חשבונית",
+    "invoice",
+    "invrec",
+    "חשבונית מס",
+    "invoicereceipt",
+    "transaction",
+    "=חשבוניות"
+   ],
+   "desc": "חשבונית"
+  },
+  {
+   "id": "receipt",
+   "tags": [
+    "קבלה"
+   ],
+   "cat": "@entity",
+   "cat_default": "misc",
+   "alias": false,
+   "any": [
+    "קבלה",
+    "receipt",
+    "אסמכתא",
+    "אישור תשלום",
+    "שובר תשלום"
+   ],
+   "desc": "קבלה / אישור תשלום"
+  },
+  {
+   "id": "expenses",
+   "tags": [
+    "הוצאות"
+   ],
+   "cat": "@entity",
+   "cat_default": "misc",
+   "alias": false,
+   "any": [
+    "expence",
+    "הוצאות",
+    "הכנסות",
+    "finddealrange",
+    "dealsbyday",
+    "סליקות",
+    "סליקה",
+    "invoice sum",
+    "עסקאות"
+   ],
+   "desc": "ריכוז הכנסות / הוצאות",
+   "no_text": true
+  },
+  {
+   "id": "misc_forms",
+   "tags": [
+    "טופס"
+   ],
+   "cat": "misc",
+   "alias": false,
+   "any": [
+    "likud",
+    "ליכוד",
+    "בית כנסת",
+    "הזמנת מקומות",
+    "אין לי טלוויזיה",
+    "כרטיסים",
+    "אישור מכס",
+    "תוצאות"
+   ],
+   "desc": "טופס / מסמך אישי",
+   "no_text": true
+  }
+ ],
+ "folder_defaults": [
+  {
+   "path_any": [
+    "/דרכונים"
+   ],
+   "type": "passport"
+  },
+  {
+   "path_any": [
+    "/ביטוח/ביטוחים הראל אלעד צור/מעקב עור"
+   ],
+   "type": "medical"
+  },
+  {
+   "path_any": [
+    "/מעקב כירוגיה"
+   ],
+   "type": "medical"
+  },
+  {
+   "path_any": [
+    "/רפואי"
+   ],
+   "type": "medical"
+  },
+  {
+   "path_any": [
+    "/רכב"
+   ],
+   "type": "vehicle_misc"
+  },
+  {
+   "path_any": [
+    "/פנסיה",
+    "/השקעות",
+    "מיטב דש טרייד",
+    "/ביטקוין"
+   ],
+   "type": "pension_report"
+  },
+  {
+   "path_any": [
+    "/ביטוח"
+   ],
+   "type": "insurance_forms"
+  },
+  {
+   "path_any": [
+    "/דפי חשבון",
+    "/הנהלת חשבונות"
+   ],
+   "type": "bank_statement"
+  },
+  {
+   "path_any": [
+    "/כרטיסי אשראי"
+   ],
+   "type": "credit_statement"
+  },
+  {
+   "path_any": [
+    "/הלוואה",
+    "/הלוואות"
+   ],
+   "type": "loan_misc"
+  },
+  {
+   "path_any": [
+    "/משכנתא"
+   ],
+   "type": "mortgage"
+  },
+  {
+   "path_any": [
+    "/תיקייה ממסירת הדירה"
+   ],
+   "type": "warranty"
+  },
+  {
+   "path_any": [
+    "/נדלן",
+    "/בית",
+    "/דירה פולינה",
+    "/כרמיאל"
+   ],
+   "type": "re_plan"
+  },
+  {
+   "path_any": [
+    "/דוחות שנתיים",
+    "/דוח 2016",
+    "/שומות"
+   ],
+   "type": "annual_report"
+  },
+  {
+   "path_any": [
+    "/תלושי משכורת",
+    "/משכורות",
+    "/106 ותלושים"
+   ],
+   "type": "payslip"
+  },
+  {
+   "path_any": [
+    "/חשבונות ארהב",
+    "/רשויות ארהב"
+   ],
+   "type": "us_ss_docs"
+  },
+  {
+   "path_any": [
+    "/תכנון כלכלי 2026"
+   ],
+   "type": "bank_statement"
+  },
+  {
+   "path_any": [
+    "חשבוניות",
+    "/חשבונות",
+    "/חשבונות צור הדרכות",
+    "/קבלות",
+    "/סליקת אשראי"
+   ],
+   "type": "invoice"
+  },
+  {
+   "path_any": [
+    "/בנק מזרחי",
+    "/בנק צור הדרכות",
+    "02 - צור הדרכות/בנק"
+   ],
+   "type": "bank_statement"
+  },
+  {
+   "path_any": [
+    "/מערכות וספקים"
+   ],
+   "type": "vendor_doc"
+  },
+  {
+   "path_any": [
+    "/חינוך",
+    "/משפחת צור/יונה",
+    "/משפחת צור/בינה"
+   ],
+   "type": "kids"
+  },
+  {
+   "path_any": [
+    "/ארכיון מיילים",
+    "/ארכיון טבלת הוצאות"
+   ],
+   "status": "not_admin"
+  },
+  {
+   "path_any": [
+    "04 - תמונות/אלעד תמונות/תעודות"
+   ],
+   "status": "queue"
+  },
+  {
+   "path_any": [
+    "04 - תמונות/אלעד תמונות"
+   ],
+   "status": "not_admin",
+   "except_ext": [
+    ".pdf"
+   ]
+  }
+ ],
+ "folder_force": [
+  {
+   "path_any": [
+    "/טיולים",
+    "/טיסות"
+   ],
+   "type": "travel"
+  }
+ ],
+ "no_entity_categories": [
+  "ids",
+  "certs",
+  "medical",
+  "kids",
+  "army",
+  "us"
+ ]
+}

@@ -4,3 +4,7 @@ CLAUDE.md
 __pycache__/
 *.pyc
 logs/
+# CP-2 doc index: personal data, never committed
+data/
+overrides*.json
+*.tsv

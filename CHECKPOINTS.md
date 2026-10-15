@@ -10,14 +10,17 @@
 - completed: 2026-02-26
 - agent: claude
 
-## CP-2: Document Deep Tagging ← CURRENT
-- [ ] Identify important document subfolders in iCloud Drive
-- [ ] Add project-specific tags to documents (Finance, Insurance, Tax, Contracts)
-- [ ] Tag PDFs by content where possible (bank statements, invoices, certificates)
-- [ ] Run icloud_tagger.py full-deep for image analysis pass
-- [ ] Verify Creative-Assets/Documents/ symlinks are correct
+## CP-2: Document Deep Tagging ✅ (built 2026-10-15)
+Rebuilt from scratch on 2026-10-15 after the March assignment to Lobs never ran.
+- [x] Scope fixed by Elad: 07 - אישי/סידורים, 07 - אישי/משפחה, 04 - תמונות/אלעד תמונות, 03 - חשבונאות ומסמכים, 02 - צור הדרכות (pdf, images, doc, xls)
+- [x] `doc_index.py`: scan (rules from `rules.json`), apply (additive Finder tags + Hebrew description as Finder comment), queue, find, aliases, report, override, preview, weekly
+- [x] Hebrew-safe search: bidi marks, niqqud and quote variants are ignored, so "תעודת זהות אלעד" finds bidi-named files
+- [x] Central folder of Finder aliases (originals never move): `07 - אישי/מסמכים חשובים/<category>/`
+- [x] Claude identified the files the rules could not (overrides in `data/overrides.json`, gitignored)
+- [x] Weekly launchd agent `com.eladtzur.doc-index`, Sunday 09:15, new and changed files only
+- [ ] Elad: spot-check the alias folder and the remaining queue (`doc_index.py queue`)
 - needs_human: false
-- agent: lobs
+- agent: claude
 - skip_permissions:
   - can_tag_files: true
   - can_move_files: false
